@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Google</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div id="header">
-        <div class="topnavLeft">
-            <a>About</a>
-            <a>Store</a>
-          </div>
-        <div class="topnavRight">
-            <a>Gmail</a>
-            <a>Images</a>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Google</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <div class=""></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+          </ul>
+          <div class="row">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-sm">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Gmail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Images</a>
+              </li>
+              <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x3-gap-fill navbar-svg" viewBox="0 0 16 16">
+                  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                </svg>              </li>
+            </ul>
+            <div class="col-sm">
+          <form class="d-flex">
+            <button class="btn btn-primary navbar-btn" type="submit">Sign in</button>
+          </form>
         </div>
-    </div>
-    <div class="googleLogo">
-        <img src="Images/googlelogo_color_272x92dp.png" alt="Google Logo">
-    </div>
-    <div class="googleSearch">
-        <input type="text" id="searchField" placeholder="">
-    </div>
-    </body>
+        </div>
+        </div>
+      </div>
+    </nav>
+<center>
+  <img src="Images/googlelogo_color_272x92dp.png" alt="" class="googleLogo">
+<div class="searchArea">
+  <div class="searchDiv rounded-pill">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: grey;">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+<input type="text" name="" id="searchbox">  
+<img id="google-mic" src="Images/google-mic.svg" alt="">
+</div>
+</div>
+</center>
+
+<div id="search-buttons">
+  <center>
+  <button type="button" id="searchButton" class="btn btn-outline-light">Google Search</button>
+  <button type="button" id="searchButton" class="btn btn-outline-light">I'm Feeling Lucky</button>
+</center>
+</div>
+<footer class="upper-footer">
+
+  
+      <div class="p-2 ">
+        <a class="country text-left" href="#">United Kingdom</a>
+      </div>
+      <div class="lower-footer p-2  ">
+        <div class="row">
+  <div class="col text-left">
+    <a class="lower-linksLeft" href="#">Advertising</a>
+    <a class="lower-linksLeft" href="#">Business</a>
+    <a class="lower-linksLeft" href="#">How Search works</a>
+    
+
+  </div>
+  <div class="col text-center">
+    <a class="lower-linksCenter" href="#">Carbon neutral since 2007</a>
+  </div>
+
+  <div class="col">
+  
+    <a class="lower-linksRight" href="#">Pricacy</a>
+    <a class="lower-linksRight" href="#">Terms</a>
+    <a class="lower-linksRight" href="#">Settings</a>  
+  </div>
+  
+</div>
+</footer>
+
+</body>
 </html>
